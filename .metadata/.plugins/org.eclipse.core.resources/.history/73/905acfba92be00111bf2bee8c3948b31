@@ -1,0 +1,39 @@
+// Print this
+
+//Company: ABC
+//Name: Rahul
+//
+//Company: ABC
+//Name: Karan
+
+package Core_JAVA.Basics_Revision_static_non_static;
+
+import java.util.Scanner;
+
+public class Program1 {
+	
+	static String companyName = "ABC";
+	
+	public Program1() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Program1(String name) {
+		// TODO Auto-generated constructor stub
+		
+		System.out.println("Company Name : " + companyName);
+		System.out.println("Name : "+ name);
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Name");
+		String inputName = sc.next();
+		
+		Program1 p = new Program1(inputName);
+		
+		sc.close();
+	}
+
+}
