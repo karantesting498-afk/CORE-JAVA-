@@ -1,0 +1,71 @@
+/*
+ * Q1 — Shared State + Object State
+
+Fix the following program.
+
+The requirement is:
+
+bankName must be shared by all accounts.
+balance must be different for every account.
+Changing the bank name through any account should affect every account.
+Depositing money into one account must not affect another account.
+
+ */
+
+package Core_JAVA.Basics_Revision_static_non_static;
+
+import java.util.Scanner;
+
+public class Program2 {
+	
+	static String bankName = "SBI";
+	double balance = 0;
+	
+	public Program2() {
+		// TODO Auto-generated constructor stub
+	}
+	
+
+	public Program2(double balance) {
+		// TODO Auto-generated constructor stub
+		this.balance= balance;
+
+	}
+	
+	public void display()
+	{
+		System.out.println("Bank Name is : "+ bankName);
+		System.out.println("Account balance is : "+ balance);
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter bank balance");
+		double balance = sc.nextDouble();
+		
+		Program2 p1 = new Program2(balance);
+		
+		System.out.println("Enter bank balance 2");
+		balance = sc.nextDouble();
+		Program2 p2 = new Program2(balance);
+
+		
+		p1.display();
+		p2.display();
+		
+		System.out.println("Changing bank name");
+		
+		Program2.bankName="HDFC";
+		
+		
+		p1.display();
+		p2.display();
+		
+		
+		sc.close();
+
+		
+		
+		
+	}
+}
