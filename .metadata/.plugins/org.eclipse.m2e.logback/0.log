@@ -84,3 +84,5 @@
 2026-10-03 00:24:24,767 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\backend\core java revision\Basics_Revision\src\test\resources
 2026-10-03 00:24:38,150 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\backend\core java revision\Basics_Revision\src\main\resources
 2026-10-03 00:24:38,157 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\backend\core java revision\Basics_Revision\src\test\resources
+2026-10-03 00:24:43,597 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\backend\core java revision\Basics_Revision\src\main\resources
+2026-10-03 00:24:43,607 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\backend\core java revision\Basics_Revision\src\test\resources
